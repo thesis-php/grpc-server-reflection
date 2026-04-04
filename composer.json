@@ -32,16 +32,10 @@
     "autoload": {
         "psr-4": {
             "Grpc\\Reflection\\V1\\": "genproto/Grpc/Reflection/V1",
-            "Grpc\\Reflection\\V1alpha\\": "genproto/Grpc/Reflection/V1alpha",
-            "Thesis\\Chat\\Api\\V1\\": "compiled/Thesis/Chat/Api/V1",
-            "Thesis\\Echos\\Api\\V1\\": "compiled/Thesis/Echos/Api/V1",
-            "Thesis\\File\\Api\\V1\\": "compiled/Thesis/File/Api/V1",
-            "Thesis\\Grpc\\Server\\Reflection\\": "src/",
-            "Thesis\\Topic\\Api\\V1\\": "compiled/Thesis/Topic/Api/V1"
+            "Grpc\\Reflection\\V1alpha\\": "genproto/Grpc/Reflection/V1alpha"
         },
         "files": [
             "genproto/Grpc/Reflection/autoload.metadata.php",
-            "compiled/Thesis/autoload.metadata.php",
             "src/register.php"
         ]
     },
