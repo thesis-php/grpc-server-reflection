@@ -132,6 +132,18 @@ fix: fixer rector composer-normalize ## Run all fixing recipes
 check: fixer-check rector-check composer-validate composer-normalize-check deps-analyze phpstan test  ## Run all project checks
 .PHONY: check
 
+compile:
+	docker run --rm \
+		--pull always \
+        --user $(CONTAINER_USER) \
+        -v $(PWD):/workspace \
+        -w /workspace \
+        ghcr.io/thesis-php/protoc-plugin:latest \
+        -I third_party/grpc \
+        --php-plugin_out=genproto \
+        third_party/grpc/grpc/reflection/v1/*.proto \
+        third_party/grpc/grpc/reflection/v1alpha/*.proto
+.PHONY: compile
 # -----------------------
 
 help:
