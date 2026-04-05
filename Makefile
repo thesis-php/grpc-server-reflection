@@ -102,7 +102,7 @@ phpstan: var vendor ## Analyze code using PHPStan
 	$(RUN) phpstan analyze --memory-limit=1G $(ARGS)
 .PHONY: phpstan
 
-test: var vendor up ## Run tests using PHPUnit
+test: var vendor up compile-test-stub ## Run tests using PHPUnit
 	$(RUN) vendor/bin/phpunit $(ARGS)
 .PHONY: test
 
@@ -144,6 +144,16 @@ compile:
         third_party/grpc/grpc/reflection/v1/*.proto \
         third_party/grpc/grpc/reflection/v1alpha/*.proto
 .PHONY: compile
+
+compile-test-stub:
+	docker run --rm \
+	    --user $(CONTAINER_USER) \
+        -v $(PWD):/workspace \
+        -w /workspace \
+        ghcr.io/thesis-php/protoc-plugin:latest \
+        --php-plugin_out=tests/genproto \
+        tests/protos/*.proto
+.PHONY: compile-test-stub
 # -----------------------
 
 help:

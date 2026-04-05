@@ -32,7 +32,8 @@
     "autoload": {
         "psr-4": {
             "Grpc\\Reflection\\V1\\": "genproto/Grpc/Reflection/V1",
-            "Grpc\\Reflection\\V1alpha\\": "genproto/Grpc/Reflection/V1alpha"
+            "Grpc\\Reflection\\V1alpha\\": "genproto/Grpc/Reflection/V1alpha",
+            "Thesis\\Grpc\\Server\\Reflection\\": "src/"
         },
         "files": [
             "genproto/Grpc/Reflection/autoload.metadata.php",
@@ -41,8 +42,12 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "Echos\\Api\\V1\\": "tests/genproto/Echos/Api/V1/",
             "Thesis\\Grpc\\Server\\Reflection\\": "tests/"
-        }
+        },
+        "files": [
+            "tests/genproto/Echos/Api/V1/autoload.metadata.php"
+        ]
     },
     "config": {
         "lock": false,

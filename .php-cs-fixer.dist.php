@@ -10,7 +10,6 @@ use PHPyh\CodingStandard\PhpCsFixerCodingStandard;
 $config = new Config()
     ->setFinder(
         Finder::create()
-            ->in(__DIR__ . '/examples')
             ->in(__DIR__ . '/src')
             ->in(__DIR__ . '/tests')
             ->append([
@@ -22,6 +21,8 @@ $config = new Config()
 
 new PhpCsFixerCodingStandard()->applyTo($config, [
     'fully_qualified_strict_types' => false,
+    'global_namespace_import' => false,
+    'phpdoc_summary' => false,
 ]);
 
 return $config;
