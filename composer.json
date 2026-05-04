@@ -21,8 +21,10 @@
         "php": "^8.4",
         "amphp/amp": "^3.1",
         "thesis/googleapis-rpc-types": "^0.1.6",
-        "thesis/grpc": "^0.1.1",
-        "thesis/protobuf": "^0.1.8",
+        "thesis/grpc-client": "^0.1.7",
+        "thesis/grpc-protocol": "^0.1.6",
+        "thesis/grpc-server": "^0.1.6",
+        "thesis/protobuf": "^0.1.10",
         "thesis/protoregistry": "^0.1.2"
     },
     "require-dev": {
