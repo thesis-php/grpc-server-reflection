@@ -8,8 +8,9 @@
 /examples/ -export-ignore
 /examples/** -export-ignore
 /src/ -export-ignore
-/genproto/ -export-ignore
 /src/** -export-ignore
+/genproto/ -export-ignore
+/genproto/** -export-ignore
 /CHANGELOG.md -export-ignore
 /composer.json -export-ignore
 /LICENSE -export-ignore
