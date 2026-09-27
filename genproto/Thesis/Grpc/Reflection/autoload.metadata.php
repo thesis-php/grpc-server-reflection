@@ -10,5 +10,6 @@
 declare(strict_types=1);
 
 \Thesis\Protobuf\Registry\Pool::get()->register(
-    new \Thesis\Protobuf\Registry\OnceRegistrar(new \Echos\Api\V1\DescriptorRegistry()),
+    new \Thesis\Protobuf\Registry\OnceRegistrar(new \Thesis\Grpc\Reflection\V1\DescriptorRegistry()),
+    new \Thesis\Protobuf\Registry\OnceRegistrar(new \Thesis\Grpc\Reflection\V1alpha\DescriptorRegistry()),
 );

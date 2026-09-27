@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Thesis\Grpc\Server\Reflection;
 
 use Amp\Cancellation;
-use Grpc\Reflection\V1alpha;
 use Thesis\Grpc;
+use Thesis\Grpc\Reflection\V1alpha;
 use Thesis\Grpc\Server\BidirectionalStreamChannel;
 
 /**
