@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Thesis\Grpc\Server\Reflection\Internal;
 
-use Grpc\Reflection\V1;
-use Grpc\Reflection\V1alpha;
 use Thesis\Grpc\Metadata;
+use Thesis\Grpc\Reflection\V1;
+use Thesis\Grpc\Reflection\V1alpha;
 use Thesis\Grpc\Server\BidirectionalStreamChannel;
 use Thesis\Grpc\ServerStream;
 

@@ -9,13 +9,13 @@ use Echos\Api\V1\EchoRequest;
 use Echos\Api\V1\EchoResponse;
 use Echos\Api\V1\EchoServiceServer;
 use Echos\Api\V1\EchoServiceServerRegistry;
-use Google\Rpc\Code;
-use Grpc\Reflection\V1;
-use Grpc\Reflection\V1alpha;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
+use Thesis\Google\Rpc\Code;
 use Thesis\Grpc\Client;
 use Thesis\Grpc\Metadata;
+use Thesis\Grpc\Reflection\V1;
+use Thesis\Grpc\Reflection\V1alpha;
 use Thesis\Grpc\Server;
 use Thesis\Protobuf\Registry\Pool;
 

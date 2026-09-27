@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Thesis\Grpc\Server\Reflection;
 
-use Grpc\Reflection\V1;
-use Grpc\Reflection\V1alpha;
+use Thesis\Grpc\Reflection\V1;
+use Thesis\Grpc\Reflection\V1alpha;
 use Thesis\Grpc\Server\ServerRunning;
 use Thesis\Grpc\ServiceRegistrar;
 

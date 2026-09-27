@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Thesis\Grpc\Server\Reflection;
 
 use Amp\Cancellation;
-use Google\Rpc\Code;
-use Grpc\Reflection\V1;
-use Grpc\Reflection\V1\ServerReflectionRequest;
-use Grpc\Reflection\V1\ServerReflectionResponse;
+use Thesis\Google\Rpc\Code;
 use Thesis\Grpc;
+use Thesis\Grpc\Reflection\V1;
+use Thesis\Grpc\Reflection\V1\ServerReflectionRequest;
+use Thesis\Grpc\Reflection\V1\ServerReflectionResponse;
 use Thesis\Grpc\Server\BidirectionalStreamChannel;
 use Thesis\Protobuf;
 
